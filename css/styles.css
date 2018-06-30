@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*codigo reset*/
+* {margin: 0px;
+	padding: 0px;
+/*	box-sizing: border-box;*/}
+
+body{font-family: 'Droid Sans', sans-serif;font-size: 14px;}
+
+.container{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #203748;
+
+}
+
+.c-contenedor{
+	max-width: 940px;
+	margin: auto
+}
+.cabeza{
+	display: flex;
+	justify-content: space-around;
+	background: #FF0004;
+	height: 84px;
+	position: fixed;
+	right: 0;
+    left: 0;
+	z-index: 1030;
+    margin-bottom: 0;
+}
+.menudito{
+	display: flex;
+	justify-content: space-around;
+}
+.perfil1 img {
+	border-radius:50%;
+	border:5px solid #fff;
+}
+.perfil1{
+	padding: 5px 0px;
+}
+
+/*MENU*/
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+}
+.menu .menu_link{
+padding: 10px 15px 10px;
+	
+color: #fff;
+	
+text-decoration: none;
+	
+text-transform: uppercase;
+	
+font-size: 18px;
+	
+border-radius: 20px;
+	
+}
+
+.menu_item{
+	margin: 30px 35px;
+	list-style: none;
+	}
+.menu_item .menu_link:hover{
+	background: #203748;
+}
+
+/*MENU FIN*/
+
+/*PERFIL INICIO*/
+/*#perfil{
+	background: #203748;
+}*/
+
+h1{
+	font-size: 50px;
+	color: #39D084;
+}
+.fa-check-circle{
+	color: #fff;
+	font-size: 30px;
+}
+.fa-check-circle:hover{
+	color: #1da1f2;
+}
+texto_pefil{
+	font-size: 25px;
+	color: white;
+}
+.contacteme{
+	background: #39d084;
+    padding: 20px 60px;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 20px 0;
+    /* position: relative; */
+    /* top: 30px; */
+    /* margin-bottom: 20px; */
+}
+.contacteme2{
+	color: white;
+	font-size: 26px;
+    text-decoration: none;
+}
+
+.perfil_cesar{
+	display: flex;
+	justify-content: space-around;
+	padding: 120px 0 100px;
+}
+.cesar_pf{
+	margin-top: 50px;
+}
+.texto_perfil{
+	font-size: 30px;
+	color: #FFFFFF;
+}
+/*redes sociales*/
+.social{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 0px;
+	
+}
+
+.social_item{
+	margin: 5px 0px;
+    list-style: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #000000;
+    line-height: 52px;
+}
+
+.social_link{
+color: #fff;
+text-decoration: none;
+font-size: 25px;
+border-radius: 50%;
+}
+
+.fb:hover{background: #3b5998;}
+.tw:hover{background: #1da1f2;}
+.ig:hover{background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);}
+.yt:hover{background: #cc181e;}
+
+
+
+
+
+
+
+/*PERFIL FIN*/
+
+
+
+
+
+/*SKILLS INICIO*/
+
+
+h2{
+	font-weight: normal;
+    color: #39D084;
+	margin-left: 20px;
+}
+#skills{
+	/*background: #203748;*/
+	height: auto;
+	color: white;
+	padding-top: 190px;
+}
+
+
+#skills .ps, #skills .ai, #skills .html, #skills .css{
+	padding:25px;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	text-align:center;
+	border:8px solid #203748;
+	transition: all 0.2s linear;
+}
+.text_circulo{
+	line-height: 95px;
+	font-size: 35px
+}
+
+
+/*Colores*/
+
+#skills .ps {
+	background:#30a5dc;
+}
+#skills .ai {
+	background:#ee742b;
+}
+#skills .html {
+	background:#f04949;
+}
+#skills .css {
+	background:#39d084;
+}
+#skills .ps:hover, #skills .ai:hover, #skills .html:hover, #skills .css:hover {
+	border:8px solid #fff;
+}
+/*Colores*/
+
+.circulo{
+	margin-left: 180px
+}
+
+.row{
+	display: flex;
+	justify-content: space-around;
+}
+
+.fil{
+	width: 350px;
+	margin-right: 220px;
+	padding: 60px 0;
+}
+
+.fil h3{
+	font-size: 18.5px;
+    line-height: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+	
+}
+.fil h3 span{
+	    float: right;
+}
+
+
+.fila_ps {
+    background: none repeat scroll 0 0 #EAEDF2;
+    border-radius: 16px;
+    height: 16px;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 2px;
+}
+
+/*colores fila*/
+.ps2 {
+    width: 90%;
+    background: #30a5dc;
+}
+
+.ai2 {
+	width:80%;
+	background:#ee742b;
+}
+.html2 {
+	width:75%;
+	background:#f04949;
+}
+.css2 {
+	width:85%;
+	background:#39d084;
+}
+
+
+/*colores fin*/
+.fila {
+    border-radius: 10px;
+    height: 4px;
+    margin: 2px 0;
+    padding: 4px 0 4px 5px;
+    position: absolute;
+}
+
+
+/*SKILLS FINAL*/
+footer{
+	margin-top: 40px;
+	height: 50px;
+	background: #355267;
+}
+.footer_01{
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+.contact_01{
+	color: white;
+	text-decoration: none;
+}
+.contact_01:hover{
+	color: #11d170;
+}
+.fa-envelope{
+	font-size: 15px;
+}
+
+.barra{
+	
+}
+.fa-bars{
+	font-size: 35px;
+	padding: 15px;
+	margin-top: 10px;
+	background: #11D170;
+	border-radius: 15px;
+}
+
+
+
+/*mobile*/
+
+@media (max-width:425px){
+	
+	.imgc {width: 96%; height: auto;}
+	
+	nav{
+		display: none;
+	}
+	.perfil_1{
+		margin-left: -80%;
+	}
+	.fa-bars{
+		margin-left: 180%;
+	}
+	
+	.texto_perfil{
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	
+	section{
+		flex-wrap: wrap;
+		flex-direction: column;
+		
+	}
+	#perfil{
+		padding-top: 30%;
+		
+	}
+	.perfil_cesar{
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 5%;
+	}
+	
+	.contacteme{
+		margin-left: 14%;text-align: center;
+	}
+	
+	
+	h1{
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	
+	
+	
+	.row{
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%
+	}
+	.fil{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.circulo{
+		margin-left: 30%;
+	}
+	
+}
+
+
+/* Small Tablets */
+@media (min-width:426px) and (max-width:768px)
+{
+	nav{
+		flex-wrap: wrap;
+		
+			display: none;
+		}
+	.fa-bars{
+		margin-left: 490%;
+	
+	}
+	
+	.menudito{
+		flex-wrap: wrap;
+	}
+	
+	
+	
+	.row{
+		
+		width: 100%
+	}
+	
+	.fil{
+		width: 100%;
+		margin-left: 5%;
+		margin-right: 15%
+	}
+	.circulo{
+		margin-left: 15%;
+	}
+}
