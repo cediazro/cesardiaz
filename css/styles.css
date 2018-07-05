@@ -305,7 +305,7 @@ footer{
 }
 
 .barra{
-	display: nones;
+	display: none;
 }
 .fa-bars{
 	
@@ -369,7 +369,7 @@ form li{
 	list-style: none;
 }
 
-.cajaTXT {
+.cajax {
 	padding: 6px;
 	border-radius: 10px;
 	border: none;
