@@ -2,8 +2,26 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<script src="js/jscode.js"></script>
+	
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	
+	<script type="text/ecmascript">
+		function openventana(){
+			$(".ventana").slideToggle("slow");
+		}
+		function closeventana(){
+			$(".ventana").slideUp("slow");
+		}
+	</script>
+		
+	
 <title>César Díaz</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
@@ -16,15 +34,17 @@
 				<div class="menudito">
 					<p class="perfil_1"><a class="perfil1" href="#"><img src="images/cesar.jpg" width="65" alt=""></a></p>
 					
-					<nav>
+					<nav id="nav">
+						
 						<ul class="menu">
-							<li class="menu_item"><a class="menu_link" href="#perfil"><i class="fas fa-user"></i> Perfil</a></li>
-							<li class="menu_item"><a class="menu_link" href="#skills"><i class="fas fa-trophy"></i> Skills</a></li>
+						  <li class="menu_item"><a class="menu_link" href="#perfil"><em class="fas fa-user"></em> Perfil</a></li>
+						  <li class="menu_item"><a class="menu_link" href="#skills"><i class="fas fa-trophy"></i> Skills</a></li>
 							<li class="menu_item"><a class="menu_link" href=""><i class="fas fa-image"></i> Work</a></li>
-							<li class="menu_item"><a class="menu_link" href=""><i class="fas fa-envelope"></i> Contact</a></li>
+							<li class="menu_item"><a class="menu_link" href="javascript:openventana()"><i class="fas fa-envelope"></i> Contact</a></li>
+							
 						</ul>
 					</nav>
-					<p class="barra"><i class="fas fa-bars"></i></p>
+					<p id="barra1" class="barra"><i class="fas fa-bars"></i></p>
 				</div>
 			</section>
 		</header>
@@ -122,10 +142,39 @@
 		<footer>
 			<div class="c-contenedor footer_01">
 				<p>&copy; César Díaz 2018</p>
-				<p ><a class="contact_01" href="#"><i class="fas fa-envelope"></i> CONTACT</a></p>
+				
+				<p ><a class="contact_01" href="javascript:openventana()"><i class="fas fa-envelope"></i> CONTACT</a></p>
 			</div>
 			
 		</footer>
+		
+<!--		formulario-->
+			
+		<div class="ventana">
+			<div class="formulario">
+				
+				<form action="receptor.php">
+					<div class="contact_03">
+						<p class="contact_02"><i class="fas fa-envelope"></i> Contact Me</p>
+						<p class="cerrar"><a href="javascript:closeventana()"><i class="fas fa-times"></i></a></p>
+					</div><br> <hr>
+					<input type="hidden" value="diazrodriguezcesar@gmail.com" name="destino">
+
+					<ul>
+						<li><label for="name"></label> <br> <input type="text" placeholder="Your Name" name="nombre" id="name" required class="cajaTXT"></li>
+						
+						<li><label for="email"></label> <br> <input type="email" name="mail" placeholder="Your Email" id="email" required class="cajaTXT"></li>
+						
+						<li><label for="comment"></label> <br> <textarea name="mensaje" placeholder="Mensaje" id="comment" required  class="cajaTXT" ></textarea></li>
+						<li> <button type="submit">Enviar</button></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		
+		
+
 	</main>
+	
 </body>
 </html>
